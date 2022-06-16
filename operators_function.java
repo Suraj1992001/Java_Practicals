@@ -1,6 +1,6 @@
 //WAP To Perform Operators With The Help Of Function
 import java.util.*;									//Importing Scanner Class
-public class operators_function()							//Operators Function Class	
+public class operators_function								//Operators Function Class	
 {
 	public static void main(String[] args) 						//Main Class
 	{
