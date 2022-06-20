@@ -1,16 +1,17 @@
-import java.util.*;
-public class array_switch 
+/*WAP To Accept Size And Elements Of Array From User And Perform The Following Using Switch Case
+1.Greater No.   2.Smaller No.  3.Ascending Order  4.Descending Order*/
+import java.util.*;								//Importing Scanner Class
+public class array_switch 							//'array_switch' Class
 {
-	static int i,j,temp;
-	static Scanner sc = new Scanner(System.in);
-	public static void accept_details()
+	static int i,j,temp,Scanner sc = new Scanner(System.in);		//Declaring Variables Globally
+	public static void accept_details()					//'accept_details' Function
 	{
-		int n;
-		System.out.println("Enter the size of your array:");
-		n = sc.nextInt();
-		int arr[]=new int[n];
+		int n;								//Declaring Variable Locally
+		System.out.println("Enter the size of your array:");		//Taking Input
+		n = sc.nextInt();						//Giving Input
+		int arr[]=new int[n];						//Declaring Array
 		System.out.println("Enter the elements in your array:");
-		for(i=0;i<n;i++)
+		for(i=0;i<n;i++)						//Using for loop For Entering The Array Elements
 		{
 			arr[i] = sc.nextInt();
 		}
