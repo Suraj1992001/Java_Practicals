@@ -1,3 +1,4 @@
+//WAP To Implement Abstraction By Using Abstract Class
 package Abstraction;
 public class abs_demo extends abs_class 
 {
@@ -7,7 +8,7 @@ public class abs_demo extends abs_class
 		obj.sod();
 		obj.fib();
 	}
-	@Override
+@Override
 public void fib() 
 	{
 		int n,next_num,first_num=0,sec_num=1;
