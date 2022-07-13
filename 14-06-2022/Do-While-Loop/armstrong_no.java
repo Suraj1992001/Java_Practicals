@@ -1,23 +1,24 @@
-import java.util.*;
-public class armstrong_no
+//WAP To Accept A Number From User And Find Whether It Is Armstrong Or Not
+import java.util.*;                                         //Importing Scanner Class
+public class armstrong_no                                   //Armstrong Number Class
 {
-    public static void  main(String args[])
+    public static void main(String args[])                  //Main Class
     {
-        int a,rem,num,sum=0;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a no.:");
-        a = sc.nextInt();
-        num = a;
-        do
+        int a,rem,num,sum=0;                                //Declaring Variables
+        Scanner sc = new Scanner(System.in);                //Creating Object For Scanner Class
+        System.out.println("Enter a no.:");                 //Taking Input
+        a = sc.nextInt();                                   //Giving Input
+        num = a;                                            //Assigning Value
+        do                                                  //Using do-while loop
         {
-            rem = a % 10;
+            rem = a % 10;                                   //Performing Operation
             sum = sum + (rem * rem * rem);
             a = a / 10;
         }
-        while (a>0);
-        if(sum == num)
+        while (a>0);                                        //Condition In while loop
+        if(sum == num)                                      //Using if-else Statement
         {
-            System.out.println(num+" is an armstrong no.");
+            System.out.println(num+" is an armstrong no."); //Displaying Output
         }
         else
         {
