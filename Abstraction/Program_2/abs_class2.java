@@ -1,6 +1,7 @@
-//WAP To Perform Abstraction Using Abstract Classes In Which 1:Abstract Method:
-package Abstraction;
-import java.util.*;
+/*WAP To Perform Abstraction Using Abstract Classes In Which :	1 : Abstract Method : Sorting The Array Elements In Descending Order
+								2 : Concrete Method : Finding The Number Is Pallindrome Or Not*/
+package Abstraction;						//Creating A Package 'Abstraction' To Store Multiple Classes
+import java.util.*;						//Importing Scanner Class
 public abstract class abs_class2 
 {
 	Scanner sc = new Scanner(System.in);
