@@ -1,3 +1,4 @@
+//WAP To Perform Abstraction Using Abstract Classes In Which 1:Abstract Method:
 package Abstraction;
 import java.util.*;
 public abstract class abs_class2 
