@@ -1,33 +1,35 @@
-package practicals_21_07_2022;
-import java.util.*;;
-public class derived_class_1 extends base_class_1 
+/*WAP To Accept Candidate Name, Bank Name, Phone Number, Account Number From User And By Encapsulation Make Balance And Pin Private 
+And Take Default Balance=500 And Take Credit Amount And Debit Amount From User And Display The Details If The Pin Is Correct*/
+package practicals_21_07_2022;						//Creating A Package
+import java.util.*;							//Importing Scanner Class	
+public class derived_class_1 extends base_class_1 			//Sub Class Inherit Super Class
 {
-	Scanner sc = new Scanner(System.in);
-	String c_name,b_name;
+	Scanner sc = new Scanner(System.in);				//An Object Of Scanner Class Is Created
+	String c_name,b_name;						//Variable Declaration
 	int total=500,credit,debit,ch,pin,temp;
 	long phone,account;
 	char c;
-	public void accept()
+	public void accept()						//Creating Method
 	{
-		System.out.println("Enter the candidate name:");
-		c_name=sc.nextLine();
+		System.out.println("Enter the candidate name:");	//Taking Input
+		c_name=sc.nextLine();					//Giving Input
 		System.out.println("Enter the phone number of the candidate:");
 		phone=sc.nextLong();
 		System.out.println("Enter the bank name:");
 		b_name=sc.next();
 		System.out.println("Enter the bank account number:");
 		account=sc.nextLong();
-		temp=pin;
+		temp=pin;						//Assigning A Value To A Variable
 		System.out.println("Enter your pin:");
 		pin=sc.nextInt();
-		get_Pin();
-		if(pin==temp)
+		get_Pin();						//Calling 'get' Method Of Super Class
+		if(pin==temp)						//Using 'if-else' Statement 
 		{
-			do
+			do						//Using 'do-while' Loop
 			{
 				System.out.println("Enter your action number 1.Credit 2.Debit:");
 				ch=sc.nextInt();
-				switch(ch)
+				switch(ch)				//Using 'switch-case' Statement
 				{
 				case 1:	System.out.println("Enter the amount you want to credit:");
 						credit=sc.nextInt();
@@ -40,8 +42,8 @@ public class derived_class_1 extends base_class_1
 							total -= credit;
 							System.out.println("Amount Credited.");
 						}
-						set_Total(total);
-						break;
+						set_Total(total);	//calling set method of super class
+						break;			//break statement to send the control outside the loop 
 				case 2:	System.out.println("Enter the amount you want to debit:");
 						debit=sc.nextInt();
 						total += debit;
@@ -74,10 +76,10 @@ public class derived_class_1 extends base_class_1
 			System.out.println("Sorry we have nothing to display to you.");
 		}
 	}
-	public static void main(String[] args)
+	public static void main(String[] args)				//main class
 	{
-		derived_class_1 obj = new derived_class_1();
-		obj.accept();
+		derived_class_1 obj = new derived_class_1();		//creating object for sub class
+		obj.accept();						//calling  method
 		obj.display();
 	}	
 }
